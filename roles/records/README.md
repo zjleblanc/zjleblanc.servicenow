@@ -1,4 +1,4 @@
-mgmt.snow_configuration.records
+zjleblanc.servicenow.records
 =========
 
 Wrap the Service Now Table API module to be "idempotent".
@@ -20,7 +20,7 @@ Example Playbook
       tasks:
         - name: Execute records role
           ansible.builtin.include_role:
-            name: mgmt.snow_configuration.records
+            name: zjleblanc.servicenow.records
           vars:
             snow_records:
               - type: oauth_entity_scope
